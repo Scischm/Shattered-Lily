@@ -1,2 +1,3 @@
 # Red-Lily
-A test-bed for learning how to code for video game development.
+
+I'd like to one day create my own games. This repository was created in order to publicly review my code as I learn the ins and outs.
