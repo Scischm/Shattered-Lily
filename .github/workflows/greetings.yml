@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Thank you very much for your contribution, by providing feedback we can better direct our efforts. Even if the topic is closed please don't be discouraged as you still got people thinking!"
+        pr-message: "Thank you so much for your contribution. Pull requests help us to fine tune things that we normally wouldn't think about. This empowers players to be involved in development! Don't give up even if your request isn't committed, take it back to the drawing board!"
